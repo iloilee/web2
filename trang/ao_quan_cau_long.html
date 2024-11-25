@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badminton Store</title>
+    <style>
+      /* Đặt style cho phần body */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+
+      /* Style cho phần tiêu đề (header) */
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      /* Style cho tiêu đề của trang */
+      header h1 {
+        margin: 0;
+      }
+
+      /* Phần container chứa sản phẩm */
+      .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      /* Style cho từng sản phẩm */
+      .product {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        width: 200px;
+        margin: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Style cho ảnh sản phẩm */
+      .product img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      /* Tên sản phẩm */
+      .product h2 {
+        font-size: 18px;
+        color: #333;
+      }
+
+      /* Giá sản phẩm */
+      .product p {
+        color: #666;
+        font-size: 16px;
+      }
+
+      /* Style cho nút thêm vào giỏ hàng */
+      .product button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+      }
+
+      /* Thêm hiệu ứng cho nút */
+      .product button:hover {
+        background-color: #218838;
+      }
+      .gioithieu {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 20px 0;
+        padding: 50px;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Phần tiêu đề của trang -->
+    <header>
+      <h1>Badminton Store</h1>
+    </header>
+
+    <!-- Container chứa các sản phẩm -->
+    <div class="product-container">
+      <div class="product">
+        <img
+          src="../assets/img/item-quanaocaulong/ao-cau-long-yonex-a559-nam-trang_1728267097.webp"
+          alt="Sản phẩm 1"
+        />
+        <h2>Yonex A559</h2>
+        <p>Giá: 130.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-quanaocaulong/ao-cau-long-lining-363-nu-trang_1722308616.webp"
+          alt="Sản phẩm 2"
+        />
+        <h2>Lining 363</h2>
+        <p>Giá: 160.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-quanaocaulong/ao-cau-long-yonex-vm1058-nam-trang-xanh-cam_1728267941.webp"
+          alt="Sản phẩm 3"
+        />
+        <h2>Yonex A592</h2>
+        <p>Giá: 130.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-quanaocaulong/ao-cau-long-victor-t-40024-den-chinh-hang_1728329645.jpg"
+          alt="Sản phẩm 4"
+        />
+        <h2>Victor T-40024 Black</h2>
+        <p>Giá: 350.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-quanaocaulong/ao-cau-long-yonex-ac121-nu-trang_1726598965.webp"
+          alt="Sản phẩm 5"
+        />
+        <h2>Yonex AC 120</h2>
+        <p>Giá: 130.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-quanaocaulong/quan-cau-long-kamito-basic-v2-kmps241040f-nu-den-trang-chinh-hang_1724016342.webp"
+          alt="Sản phẩm 6"
+        />
+        <h2>Kamito Basic V2 KMPS241040F</h2>
+        <p>Giá: 180.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-quanaocaulong/quan-cau-long-lining-q20-nam-den_1715643656.webp"
+          alt="Sản phẩm 7"
+        />
+        <h2>Lining Q20 Black</h2>
+        <p>Giá: 110.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-quanaocaulong/quan-cau-long-kumpoo-403-nam-tim-chinh-hang_1722394738.webp"
+          alt="Sản phẩm 8"
+        />
+        <h2>Kumpoo 403 Purple</h2>
+        <p>Giá: 350.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-quanaocaulong/quan-cau-long-victor-961-den_1721241526.webp"
+          alt="Sản phẩm 9"
+        />
+        <h2>Victor 961</h2>
+        <p>Giá: 130.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-quanaocaulong/quan-cau-long-yonex-959-xanh_1721176152.webp"
+          alt="Sản phẩm 10"
+        />
+        <h2>Victor 959 Blue</h2>
+        <p>Giá: 130.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-quanaocaulong/vay-cau-long-taro-tr024-v01-trang-chinh-hang_1727663838.webp"
+          alt="Sản phẩm 11"
+        />
+        <h2>Taro R024-V01- White</h2>
+        <p>Giá: 130.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-quanaocaulong/vay-cau-long-yonex-943-trang-8.webp"
+          alt="Sản phẩm 12"
+        />
+        <h2>Yonex 943</h2>
+        <p>Giá: 150.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-quanaocaulong/vay-cau-long-victor-7053-trang-den-2.webp"
+          alt="Sản phẩm 13"
+        />
+        <h2>Victor 7053 White</h2>
+        <p>Giá: 150.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-quanaocaulong/vay-cau-long-lining-035-den-1.webp"
+          alt="Sản phẩm 14"
+        />
+        <h2>Lining 035 Black</h2>
+        <p>Giá: 150.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-quanaocaulong/vay-cau-long-yonex-92006-xanh-navy-1.webp"
+          alt="Sản phẩm 15"
+        />
+        <h2>LYonex 92006 Navy</h2>
+        <p>Giá: 150.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+    <p class="gioithieu">
+      Ngoài vợt giúp bạn tăng cường sức mạnh, giày đảm bảo an toàn cho đôi chân.
+      Áo quần cầu lông chính là sản phẩm để giúp bạn nổi bật cũng như tạo sự
+      thoải mái mỗi khi ra sân. Trên thị trường hiện nay, có khá nhiều mẫu mã áo
+      quần cầu lông đẹp đơn cử như quần áo Lining, Yonex, Victor... những hãng
+      chuyên về quần áo nam, nữ chất lượng. <br />
+      <br />
+      <br />
+
+      <u><b>Những hãng áo cầu lông hàng đầu tại Việt Nam</b></u> <br />
+      <br />
+
+      Không chỉ là hãng chuyên cung cấp vợt cầu lông tuyệt đỉnh nhất thế giới,
+      áo quần Yonex còn được biết đến là những sản phẩm thời trang hàng đầu cùng
+      với chất lượng tối ưu nhất. Song song đó, áo quần cầu lông Lining lại luôn
+      tạo được sự thoải mái cần thiết cho người đánh cầu. Ngoài ra, áo quần
+      Victor lại giúp bạn nổi bật trên sân. <br />
+      <br />
+
+      <u><b>Áo quần đánh cầu lông Yonex</b></u> <br /><br />
+      Áo quần cầu lông Yonex là một thương hiệu nổi tiếng và uy tín trong lĩnh
+      vực cầu lông. Với hơn nửa thế kỷ kinh nghiệm và tiến bộ không ngừng trong
+      công nghệ và thiết kế, Yonex đã trở thành một trong những nhà sản xuất
+      hàng đầu về áo quần cầu lông trên toàn thế giới. <br />
+      <br />
+
+      Áo quần cầu lông Yonex được thiết kế với sự chú trọng đến cảm giác thoải
+      mái và hiệu suất tối ưu trong khi chơi cầu lông. Chất liệu chủ yếu sử dụng
+      trong sản xuất áo là polyester, giúp tạo cảm giác mềm mại, nhẹ nhàng và
+      thoáng khí. Điều này giúp người chơi cảm thấy thoải mái và dễ dàng di
+      chuyển trên sân. <br />
+      <br />
+
+      Một trong những đặc điểm nổi bật của áo quần cầu lông Yonex là công nghệ
+      vải tiên tiến. Các công nghệ như "Ergoshape" và "Durable Seam" giúp tạo ra
+      áo với đường may chắc chắn, đảm bảo độ bền và tuổi thọ cao. Áo quần cầu
+      lông Yonex cũng có khả năng hút ẩm và kháng khuẩn, giúp người chơi luôn
+      cảm thấy thoái mái và tươi mát trong suốt quá trình thi đấu. <br />
+      <br />
+
+      Ngoài ra, áo quần cầu lông Yonex cũng được thiết kế với nhiều mẫu mã và
+      phong cách đa dạng, từ những thiết kế truyền thống đến những mẫu áo mang
+      tính hiện đại và độc đáo. Bạn có thể tìm thấy áo với các gam màu tươi sáng
+      và họa tiết độc đáo để phù hợp với cá nhân và phong cách chơi cầu lông của
+      mình. <br />
+      <br />
+
+      Với sự kết hợp giữa chất lượng, thiết kế đẹp mắt và hiệu suất vượt trội,
+      áo quần cầu lông Yonex đã trở thành lựa chọn hàng đầu của rất nhiều người
+      chơi và vận động viên cầu lông trên toàn thế giới. Bất kể bạn là một người
+      chơi cầu lông chuyên nghiệp hay chỉ đơn giản là một người yêu thích môn
+      thể thao này, áo quần cầu lông Yonex sẽ mang lại cho bạn sự tự tin và cảm
+      giác thoải mái khi tham gia trận đấu. <br />
+      <br />
+      <br />
+
+      <u><b>Áo quần cầu lông Lining</b></u> <br />
+      <br />
+      Lining là một thương hiệu thể thao lớn của Trung Quốc và nổi tiếng về mảng
+      cầu lông. Áo quần đánh cầu lông Lining được thiết kế với sự tập trung vào
+      sự thoải mái và màu sắc nổi trội. Chất liệu chủ yếu sử dụng trong sản xuất
+      áo là polyester cao cấp, mang lại cảm giác mềm mại và nhẹ nhàng. Đặc biệt,
+      áo quần cầu lông Lining có khả năng thoáng khí tốt, giúp hút ẩm đảm bảo
+      bạn luôn khô ráo và thoải mái trong suốt quá trình thi đấu. <br />
+      <br />
+
+      Áo quần cầu lông Lining cung cấp độ bền và độ co giãn tốt. Đường may chắc
+      chắn và kỹ thuật tinh xảo giúp áo và quần chống chịu được những cử động
+      mạnh mẽ trong quá trình chơi cầu lông. Bạn có thể tự tin di chuyển trên
+      sân mà không bị khó chịu bởi áo và quần. <br />
+      <br />
+      <br />
+
+      <u><b>Phân biệt áo cầu lông nam và nữ</b></u> <br />
+      <br />
+      Mẫu áo quần cầu lông nam thường có thiết kế đơn giản và thanh lịch. Áo
+      quần cầu lông nam thường được thiết kế theo dạng tay ngắn hoặc áo ba lỗ
+      cầu lông sát nách. Thiết kế phổ biến cho áo quần cầu lông nam là áo không
+      có cổ áo để tạo sự thoáng khí và dễ di chuyển trên sân. Màu sắc của áo
+      quần cầu lông nam thường là sự kết hợp của các gam màu tươi sáng và họa
+      tiết đơn giản, mang lại vẻ ngoài nam tính và hiện đại. <br />
+      <br />
+
+      Áo quần cầu lông nữ thường có thiết kế nhẹ nhàng và nữ tính. Áo quần cầu
+      lông nữ thường có kiểu dáng ôm sát cơ thể hoặc có dây rút ở eo để tôn lên
+      đường cong nữ tính. Áo quần cầu lông nam thường được thiết kế theo dạng
+      tay ngắn hoặc cũng có 1 số mẫu áo ba lỗ cầu lông. Màu sắc của áo quần cầu
+      lông nữ đa dạng, từ những gam màu pastel nhẹ nhàng đến các họa tiết đa sắc
+      năng động. Ngoài ra nữ giới có thể chọn các loại váy cầu lông phù hợp với
+      cá nhân mỗi người hơn giúp phái nữ tự tin và quyến rũ trên sân cầu. <br />
+      <br />
+      <br />
+    </p>
+  </body>
+</html>

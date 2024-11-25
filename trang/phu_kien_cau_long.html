@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badminton Store</title>
+    <style>
+      /* Đặt style cho phần body */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+
+      /* Style cho phần tiêu đề (header) */
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      /* Style cho tiêu đề của trang */
+      header h1 {
+        margin: 0;
+      }
+
+      /* Phần container chứa sản phẩm */
+      .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      /* Style cho từng sản phẩm */
+      .product {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        width: 200px;
+        margin: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Style cho ảnh sản phẩm */
+      .product img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      /* Tên sản phẩm */
+      .product h2 {
+        font-size: 18px;
+        color: #333;
+      }
+
+      /* Giá sản phẩm */
+      .product p {
+        color: #666;
+        font-size: 16px;
+      }
+
+      /* Style cho nút thêm vào giỏ hàng */
+      .product button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+      }
+
+      /* Thêm hiệu ứng cho nút */
+      .product button:hover {
+        background-color: #218838;
+      }
+      .gioithieu {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 20px 0;
+        padding: 50px;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Phần tiêu đề của trang -->
+    <header>
+      <h1>Badminton Store</h1>
+    </header>
+
+    <!-- Container chứa các sản phẩm -->
+    <div class="product-container">
+      <div class="product">
+        <img
+          src="../assets/img/item-pkcaulong/vo-cau-long-yonex-lcw-2024-dai-trang-60k_1718411542.webp"
+          alt="Sản phẩm 1"
+        />
+        <h2>Yonex LCW 2024 Long White</h2>
+        <p>Giá: 60.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-pkcaulong/vo-cau-long-yonex-sksm1876zmp5-chinh-hang_1716165585.webp"
+          alt="Sản phẩm 2"
+        />
+        <h2>Yonex SKSM1876ZMP5</h2>
+        <p>Giá: 90.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-pkcaulong/dau-lanh-ligpro-30ml_1730145841.webp"
+          alt="Sản phẩm 3"
+        />
+        <h2>Dầu lạnh Ligpro (30ml)</h2>
+        <p>Giá: 54.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-pkcaulong/binh-xit-lanh-ligpro-160ml_1730145231.webp"
+          alt="Sản phẩm 4"
+        />
+        <h2>Bình xịt lạnh Ligpro (160ml)</h2>
+        <p>Giá: 100.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-pkcaulong/binh-xit-nong-ligpro-160ml_1730145539.webp"
+          alt="Sản phẩm 5"
+        />
+        <h2>Bình xịt nóng Ligpro (160ml)</h2>
+        <p>Giá: 97.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-pkcaulong/quan-can-yonex-xin-ac-102c-ma-ch-2.webp"
+          alt="Sản phẩm 6"
+        />
+        <h2>Quấn Cán Yonex Xịn AC 102C</h2>
+        <p>Giá: 100.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-pkcaulong/quan-lot-can-yonex-ac013cr-ma-ch-1.webp"
+          alt="Sản phẩm 7"
+        />
+        <h2>Quấn lót cán Yonex AC013CR</h2>
+        <p>Giá: 130.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-pkcaulong/quan-can-yonex-cuon-ac-402-2ex-vai--1.webp"
+          alt="Sản phẩm 8"
+        />
+        <h2>Quấn cán Yonex cuộn AC 402 2EX (vải)</h2>
+        <p>Giá: 530.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-pkcaulong/bang-tran-cau-long-lining-aqah362-1-noi-dia-trung_1694656441.webp"
+          alt="Sản phẩm 9"
+        />
+        <h2>Băng trán cầu lông Lining AQAH362-1</h2>
+        <p>Giá: 65.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-pkcaulong/bang-chan-mo-hoi-lining-aqah198-2-noi-dia-trung_1693795681.webp"
+          alt="Sản phẩm 10"
+        />
+        <h2>Băng chặn mồ hôi Lining AQAH198-2</h2>
+        <p>Giá: 55.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-pkcaulong/ong-cau-long-nhua-yonex-mav-250-noi-dia-1.webp"
+          alt="Sản phẩm 11"
+        />
+        <h2>Ống Cầu Lông Nhựa Yonex MAV 250</h2>
+        <p>Giá: 300.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-pkcaulong/ong-cau-long-lining-ayqn-024-1.webp"
+          alt="Sản phẩm 12"
+        />
+        <h2>Ống cầu lông Lining AYQN024</h2>
+        <p>Giá: 280.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-pkcaulong/cau-long-victor-lark-5-1.webp"
+          alt="Sản phẩm 13"
+        />
+        <h2>Ống cầu lông Victor Lark 5</h2>
+        <p>Giá: 280.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-pkcaulong/ong-cau-long-bubadu-3in1-1.webp"
+          alt="Sản phẩm 14"
+        />
+        <h2>Ống cầu lông Bubadu 3in1</h2>
+        <p>Giá: 260.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-pkcaulong/ong-cau-long-hai-yen-s100-3.webp"
+          alt="Sản phẩm 15"
+        />
+        <h2>Ống cầu lông Hải Yến S100</h2>
+        <p>Giá: 270.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+    <p class="gioithieu">
+      Giày, vợt, quần áo cầu lồng là những sản phẩm giúp bạn đánh cầu tốt. Tuy
+      nhiên, nếu thiếu phụ kiện cầu lông như quả cầu lông hay quấn cán vợt cầu
+      lông cũng khó giúp bạn chơi cầu được. <br />
+      <br />
+      <br />
+
+      <u><b>Những phụ kiện cầu lông cần thiết</b></u> <br />
+      <br />
+
+      Phụ kiện cầu lông khá đa dạng và phòng phú trải đều từ những thứ thiết yếu
+      như quả cầu lông, quấn cán cầu lông đến những thứ nhỏ nhất như cước căng,
+      lót giày, móc khóa... Dẫu đây là những phụ kiện không quá cần thiết, nhưng
+      cũng nên trang bị. <br />
+      <br />
+
+      <u><b>Phụ kiện cầu lông những sản phẩm khác</b></u> <br /><br />
+      Không đắc đỏ như Vợt cầu lông, giày hay quần áo cầu lông. Những phụ kiện
+      cầu lông đều có giá khá mềm, như quả cầu lông hoặc quấn cán cầu lông. Tuy
+      nhiên, đây cũng là những sản phẩm dễ hư hại và thay đổi nhất khi đánh cầu.
+      Trung bình, một set đấu có thể thay đến 2-3 quả cầu là chuyện thường xảy
+      ra. Quấn cán bạn cũng có thể tự thay tùy vào kinh tế và sở thích màu sắc
+      của mình. <br />
+      <br />
+    </p>
+  </body>
+</html>

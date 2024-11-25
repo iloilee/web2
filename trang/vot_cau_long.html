@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badminton Store</title>
+    <style>
+      /* Đặt style cho phần body */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+
+      /* Style cho phần tiêu đề (header) */
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      /* Style cho tiêu đề của trang */
+      header h1 {
+        margin: 0;
+      }
+
+      /* Phần container chứa sản phẩm */
+      .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      /* Style cho từng sản phẩm */
+      .product {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        width: 200px;
+        margin: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Style cho ảnh sản phẩm */
+      .product img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      /* Tên sản phẩm */
+      .product h2 {
+        font-size: 18px;
+        color: #333;
+      }
+
+      /* Giá sản phẩm */
+      .product p {
+        color: #666;
+        font-size: 16px;
+      }
+
+      /* Style cho nút thêm vào giỏ hàng */
+      .product button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+      }
+
+      /* Thêm hiệu ứng cho nút */
+      .product button:hover {
+        background-color: #218838;
+      }
+      .gioithieu {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 20px 0;
+        padding: 50px;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Phần tiêu đề của trang -->
+    <header>
+      <h1>Badminton Store</h1>
+    </header>
+
+    <!-- Container chứa các sản phẩm -->
+    <div class="product-container">
+      <div class="product">
+        <img
+          src="../assets/img/item-votcaulong/vot-cau-long-yonex-nanoflare-700-pro-chinh-hang_1727042472.webp"
+          alt="Sản phẩm 1"
+        />
+        <h2>Yonex Nanoflare 700 pro</h2>
+        <p>Giá: 3.700.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+      <div class="product">
+        <img
+          src="../assets/img/item-votcaulong/vot-cau-long-yonex-astrox-77-pro-xanh-china-limited-noi-dia-trung_1726539659.webp"
+          alt="Sản phẩm 2"
+        />
+        <h2>Yonex Astrox 77 pro Xanh Limited China</h2>
+        <p>Giá: 13.500.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+      <div class="product">
+        <img
+          src="../assets/img/item-votcaulong/vot-cau-long-yonex-arcsaber-11-pro-chinh-hang-1.webp"
+          alt="Sản phẩm 3"
+        />
+        <h2>Yonex Arcsaber 11 pro</h2>
+        <p>Giá: 4.000.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-votcaulong/vot-cau-long-yonex-duora-10-lcw-2017-xach-tay-1.webp"
+          alt="Sản phẩm 4"
+        />
+        <h2>Yonex Doura 10 Lee Chong Wei 2017</h2>
+        <p>Giá: 3.000.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-votcaulong/vot-cau-long-yonex-astrox-88s-pro-2024-chinh-hang_1710988489.webp"
+          alt="Sản phẩm 5"
+        />
+        <h2>Yonex Astrox 88S pro 2024</h2>
+        <p>Giá: 4.000.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-votcaulong/set-vot-cau-long-victor-iron-man-gb-chinh-hang_1717958958.webp"
+          alt="Sản phẩm 6"
+        />
+        <h2>Victor Iron Man Metallic</h2>
+        <p>Giá: 5.500.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-votcaulong/vot-cau-long-victor-spider-man-limited-2024-chinh-hang_1711144532.webp"
+          alt="Sản phẩm 7"
+        />
+        <h2>Victor Spider Man Limited 2024</h2>
+        <p>Giá: 4.900.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-votcaulong/vot-cau-long-victor-auraspeed-hs-plus-chinh-hang_1711662481.webp"
+          alt="Sản phẩm 8"
+        />
+        <h2>Victor Auraspeed HS Plus</h2>
+        <p>Giá: 3.550.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-votcaulong/vot-cau-long-victor-one-piece-wado-ichimonji-5.webp"
+          alt="Sản phẩm 9"
+        />
+        <h2>Victor One Piece - Wado Ichimonji Limited</h2>
+        <p>Giá: 3.900.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-votcaulong/set-vot-cau-long-victor-one-piece-enma-tim-limited-6.webp"
+          alt="Sản phẩm 10"
+        />
+        <h2>Victor One Piece Enma - Tím Limited</h2>
+        <p>Giá: 4.100.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-votcaulong/vot-cau-long-lining-halbertec-8000-noi-dia.jpg"
+          alt="Sản phẩm 10"
+        />
+        <h2>Lining Halbertec 8000</h2>
+        <p>Giá: 3.700.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-votcaulong/vot-cau-long-lining-calibar-600b-chinh-hang-2.webp"
+          alt="Sản phẩm 11"
+        />
+        <h2>Lining Calibar 600B</h2>
+        <p>Giá: 3.100.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-votcaulong/vot-cau-long-lining-tectonic-7i-chinh-hang-1.webp"
+          alt="Sản phẩm 12"
+        />
+        <h2>Lining Tectonic 7i</h2>
+        <p>Giá: 3.580.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-votcaulong/vot-cau-long-lining-turbocharging-75c-loh-kean-yew-2.webp"
+          alt="Sản phẩm 13"
+        />
+        <h2>Lining Turbocharging 75C Loh Kean Yew</h2>
+        <p>Giá: 4.150.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-votcaulong/vot-cau-long-lining-windstorm-78-s-trang-xanh-noi-dia-trung_1724897264.jpg"
+          alt="Sản phẩm 14"
+        />
+        <h2>Lining Windstorm 78-S</h2>
+        <p>Giá: 1.900.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+    <p class="gioithieu">
+      Vợt cầu lông Yonex luôn là lựa chọn của các tay vợt chuyên nghiệp, cũng
+      như nhiều bạn yêu thích cầu lông Việt Nam. Vậy để mua vợt cầu lông Yonex
+      chính hãng ở đâu tốt nhất? Bộ vợt cầu lông xịn nào thích hợp cho mình? Hãy
+      tham khảo bài viết về vợt Yonex sau để trả lời câu hỏi cho mình nhé!
+      <br />
+      <br />
+      <br />
+
+      <u><b>Hình thành và phát triển của hãng vợt cầu lông Yonex</b></u> <br />
+      <br />
+
+      Hãng vợt Yonex ra đời năm 1946 tại Nhật, xuất thân chỉ từ xưởng nhỏ. Ban
+      đầu, hoạt động với một máy duy nhất. Sau khi sản xuất thành công công nghệ
+      làm gỗ, hãng đã cho ra đời cây vợt cầu lông Yonex đầu tiên vào năm 1957.
+      Đến nay, vợt Yonex đã trở thành hãng bán vợt cầu lông hàng đầu thế giới.
+      <br />
+      <br />
+
+      Không dừng lại, hãng vợt cầu lông Yonex tiếp tục cho ra những sản phẩm bộ
+      cầu lông xịn để phục vụ môn cầu lông. Như giày cầu lông Yonex với chất
+      lượng cực cao, quần áo Yonex với thiết kế thời trang, những phụ kiện, quấn
+      cán Yonex cũng là những lựa chọn tối ưu nhất. <br />
+      <br />
+
+      Hiện nay, ở thị trường Yonex Việt Nam rất nhiều bạn mua vợt Yonex tìm đến
+      những bộ cầu lông xịn phù hợp với mình. Như thiên về sức mạnh thì có Vợt
+      cầu lông Yonex Voltric 7. Chuyên về đánh nhanh, phản tạt mạnh mẽ với Yonex
+      NanoSpeed 9900. Yonex Voltric 70 và Yonex Voltric 80 thiết kế đầu nặng
+      dành cho tấn công. Trong khi đó, Yonex Duora 10 là dòng vợt kiểm soát cầu,
+      công thủ toàn diện. Yonex ArcSaber 11 thiên về điều cầu và kiểm soát trận
+      đấu. <br /><br /><br />
+
+      <b>Vợt cầu lông Yonex và những hãng vợt tương đồng khác</b> <br /><br />
+      Ngoài vợt cầu lông Yonex hiện đang độc tôn số 1 trên thị trường. Một số
+      hãng với chất lượng tuyệt vời cũng được ưu tiên lựa chọn hàng đầu như Vợt
+      cầu lông Victor với độ hoàn mỹ cực cao. Hãng được mệnh danh là hoàng tử
+      thế giới - vợt cầu lông Lining. Thêm đó, vợt cầu lông Proace đã được kiểm
+      chứng chất lượng với sự lâu đời của mình. Hoặc được tin dùng tuyệt đối tại
+      Việt Nam như vợt Forza. Với Apacs, Fleet là các dòng vợt cầu lông giá rẻ
+      được lựa chọn khá nhiều. <br />
+      <br />
+      <br />
+
+      <b>Các dòng vợt cầu lông Yonex tiêu biểu hiện nay</b> <br />
+      <br />
+      Các sản phẩm Vợt cầu lông Yonex được hãng thiết kế đa dạng, phù hợp với
+      từng phong cách, lối chơi của người sử dụng. Hiện nay, những sản phẩm vợt
+      cầu lông Yonex sẽ được chia làm 3 phân khúc: phân khúc cao cấp, phân khúc
+      tầm trung và phân khúc vợt cầu lông giá rẻ hướng đến các đối tượng người
+      chơi là người chơi chuyên nghiệp hay người chơi phong trào, người mới
+      chơi. <br />
+      <br />
+
+      Các sản phẩm của hãng Yonex cũng được chia theo phong cách của từng người
+      chơi như: Dòng vợt cầu lông Yonex chuyên công, vợt cầu lông Yonex công thủ
+      toàn diện, vợt cầu lông Yonex phòng thủ, phản tạt. Không quá khó để chúng
+      ta có thể tìm kiếm cho mình một cây vợt cầu lông Yonex phù hợp với phong
+      cách chơi cũng như túi tiền của chính mình. <br />
+      <br />
+
+      Hãng vợt cầu lông Yonex luôn không ngừng cải tiến và phát triển thêm nhiều
+      dòng sản phẩm khác nhau để mang đến cho người chơi nhiều sự chọn lựa tốt
+      nhất. Chúng ta phải kể đến một số dòng sản phẩm từ hồi xưa như: Muscle
+      Power, Isometric, Carbonex, Arcsaber, Nanoray, Voltric, Duora…Và hiện tại
+      có 2 dòng vợt Yonex mới nhất và phổ biến nhất đó là Astrox Và Nanoflare.
+      Bên canh những dòng vợt cho người lớn chơi thì hãng cũng có 1 dòng vợt cho
+      trẻ em đó là dòng Junior. Cùng shopVNB điểm qua 1 số dòng vợt cầu lông
+      Yonex hot nhất trên thị trường hiện nay nhé! <br />
+      <br />
+      <br />
+
+      <b>Dòng vợt cầu lông Yonex ASTROX </b> <br />
+      <br />
+      Dòng vợt cầu lông xịn Yonex ASTROX được xem là phiên bản nâng cấp hơn của
+      dòng vợt Voltric. Dòng vợt Astrox mang thiên hướng tấn công nặng đầu nhất
+      của Yonex hiện nay với thiết kế “Steep Attack” với khả năng đập cầu cao
+      hơn. Vật liệu tạo nên dòng vợt astrox cũng khá đặc biệt với vật liệu Namd
+      hoặc Nanomesh Neo được Yonex sử dụng trong vợt tạo ra các pha chuyển động
+      linh hoạt nhưng không kém phần chắc chắn. Một cú Snapback với tốc độ kinh
+      ngạc, đồng thời giải phóng lực một cách mạnh mẽ. Rotational Generator
+      System là một công nghệ sử dụng thuyết đối trọng cho anh phép anh em tiếp
+      cầu và nhanh chóng trở lại vị trí trung tâm một cách nhanh chóng. <br />
+      <br />
+
+      Dòng vợt cầu lông Yonex Astrox là một sự lựa chọn lý tưởng dành cho người
+      chơi có lối đánh thiên công. Dòng vợt cầu lông này nổi tiếng với nhiều cây
+      vợt xịn như Astrox 77, vợt cầu lông yonex chính hãng Astrox 88d pro ,
+      Astrox 99 và mới nhất là sản phẩm Astrox 77 pro. <br />
+      <br />
+
+      Một số tay vợt nổi tiếng mang lại thành công cho dòng vợt này như: KENTO
+      MOMOTA, VIKTOR AXELSEN, CHEN YU FEI, AKANE YAMAGUCHI. <br />
+      <br />
+      <br />
+
+      <b>Dòng vợt cầu lông Yonex Nanoflare</b> <br />
+      <br />
+      Nanoflare là dòng vợt cầu lông của Yonex thiên về tốc độ, khung vợt mỏng
+      và nhẹ đầu giúp cho tốc độ vung vợt nhanh nhất, phù hợp với lối đánh phản
+      tạt nhanh và điều cầu. <br />
+      <br />
+
+      Một số công nghệ trên dòng vợt Nanoflare như: Công nghệ ISOMETRIC giúp mở
+      rộng tối đa điểm ngọt trên vợt. Công nghệ NANOMETRIC cải thiện độ bền liên
+      kết giữa các sợi carbon giúp sản phẩm cải thiện độ bền. Ngoài ra thì vẫn
+      trang bị những công nghệ mới nhất của hãng vợt cầu lông Yonex hiện này
+      như: NAMD, công nghệ SONIC METRAL, AERO Frame, Sonic Flare System, Ultra
+      Slim Shaft... <br />
+      <br />
+
+      Một số sản phẩm vợt cầu lông Yonex thuộc dòng nanoflare đang được rất
+      nhiều người chơi lựa chọn phải kể đến như: NANOFLARE 800, NANOFLARE 800
+      LT, NANOFLARE 700, NANOFLARE 600. Và một số vợt vợt giá rẻ cho người mới
+      chơi như NANOFLARE 270 SPEED, NANOFLARE 001 ABILITY, NANOFLARE DRIVE.
+      <br />
+      <br />
+
+      Một số tay vợt nổi tiếng mang lại thành công cho dòng vợt này như:
+      CAROLINA MARIN, RATCHANOK INTANON, DECHAPOL PUAVARANUKROH, JIA YI FAN.
+      <br />
+      <br />
+      <br />
+
+      <b>Dòng vợt cầu lông Yonex Arcsaber</b> <br />
+      <br />
+      Dòng vợt cầu lông Yonex Arcsaber là một trong những dòng vợt được rất
+      nhiều người chơi cầu lông lựa chọn và sử dụng theo lối đánh khác nhau. Từ
+      tấn công, phòng thủ cho tới lối chơi công thủ toàn diện. Đây là một trong
+      những dòng vợt được Yonex ứng dụng những công nghệ hiện đại bậc nhất giúp
+      người chơi dễ dàng điều cầu, phản tạt và kiểm soát cầu một cách tối đa.
+      <br /><br />
+
+      Các vật liệu được Yonex sử dụng trong dòng vợt cầu lông Yonex Arcsaber
+      luôn có chất lượng hàng đầu, đảm bảo mang lại hiệu suất tối đa cho từng
+      sản phẩm. Đó là từ công nghệ than chì và Nanometric. Với công nghệ
+      Arcsaber có thể tăng thời gian mặt vợt tiếp xúc với cầu lâu hơn, từ đó làm
+      tăng sự kiểm soát cầu một cách tối đa. Việc tăng thời gian tiếp xúc cũng
+      giúp tích lũy năng lượng cho những pha đập cầu uy lực. <br />
+      <br />
+
+      Một số sản phẩm vợt cầu lông Yonex thuộc dòng nanoflare đang được rất
+      nhiều người chơi lựa chọn phải kể đến như: ARCSABER 7 PRO, ARCSABER 11
+      PRO...Ngoài ra thì cũng có 1 số dòng vợt cầu lông yonex giá rẻ giá rẻ phải
+      kể đến như Vợt Cầu Lông Yonex Arcsaber 71 Light , Vợt Cầu Lông Yonex
+      Arcsaber 7 Play. <br />
+      <br />
+
+      Một số tay vợt nổi tiếng mang lại thành công cho dòng vợt này như:
+      SAPSIREE TAERATTANACHAI, TAUFIK HIDAYAT, KONG HEE YONG, AARON CHIA. <br />
+      <br />
+      <br />
+
+      <b>Dòng vợt cầu lông Yonex Doura</b> <br />
+      <br />
+      Dòng vợt cầu lông Yonex Duora là một trong những dòng dây vợt được hãng
+      rất chú trọng và là thế hệ tiếp theo được cải tiến từ dòng vợt ArcSaber.
+      Dòng vợt Duora này kế thừa những tinh hoa của dòng vợt ArcSaber và tiếp
+      nối những công nghệ hiện đại nhất của hãng. <br />
+      <br />
+
+      Đặt điểm chung của dòng Vợt Duora là hướng đến lối chơi công thủ toàn
+      diện, dòng vợt được tích hợp công nghệ “hai mặt vợt”, một mặt công và một
+      mặt thủ. <br />
+      <br />
+
+      Một số sản phẩm vợt cầu lông Yonex thuộc dòng nanoflare đang được rất
+      nhiều người chơi lựa chọn phải kể đến như: DUORA Z-STRIKE, DUORA 10, DUORA
+      10 LT, DUORA 99... <br />
+      <br />
+
+      Một số tay vợt nổi tiếng mang lại thành công cho dòng vợt này như: CHOU
+      TIEN CHEN, SATWIKSAIRAJ RANKIREDDY, YUGO KOBAYASHI, ZHENG SI WEI. <br />
+      <br />
+
+      <u
+        ><b
+          >So sánh vợt cầu lông Yonex với các thương hiệu vợt cầu lông khác</b
+        ></u
+      >
+      <br />
+      <br />
+      Để khẳng định một cách rõ hơn về vị trí đứng đầu thế giới của hãng vợt cầu
+      lông Yonex. Hãy so sánh những sản phẩm vợt cầu lông Yonex với các thương
+      hiệu nổi tiếng khác như Lining, Victor. <br />
+      <br />
+      <br />
+
+      <b>So sánh vợt cầu lông Yonex và vợt cầu lông Lining</b> <br />
+      <br />
+      So sánh vợt cầu lông Yonex và vợt cầu lông Lining hay Nên mua vợt Lining
+      hay Yonex so sánh ưu nhược điểm ? là những câu hỏi được nhiều người chơi
+      tìm kiếm. Cùng shopvnb đi vào chi tiết nhé! <br />
+      <br />
+
+      Hãng Vợt cầu lông Yonex luôn trang bị dây chuyền sản xuất hiện đại cùng
+      với công nghệ tiên tiến cho ra những sản phẩm chất lượng nhất. Tuy nhiên,
+      đi kèm với sự nổi tiếng và chất lượng đó thì giá tiền của một cây vợt cầu
+      lông Yonex chính hãng cũng khá cao so với mặt bằng chung là tầm 2-3 triệu.
+      Vợt cầu lông Lining có một ưu thế nổi trội đó là mức giá tương đối mềm hơn
+      so với các đối thủ đặc biệt là Yonex. Những sản phẩm của Lining thường
+      được người chơi lựa chọn ở phân khúc tầm 1 triệu đến 2 triệu. <br />
+      <br />
+
+      Vợt cầu lông Lining nổi tiếng với sơn lì pha màu sắc đẹp, nổi bậc còn vợt
+      cầu lông Yonex thì nổi tiếng với sơn bóng. Về độ bền thì sơn lì của Lining
+      đươc đánh giá cao hơn ở cả về độ bền màu cũng như hạn chế tối đa việc trầy
+      xước trong quá trình sử dụng. <br />
+      <br />
+
+      <b>So sánh vợt cầu lông Yonex và vợt cầu lông Victor</b> <br />
+      <br />
+      Vợt cầu lông Yonex và Victor thực sự là đối thủ lớn của nhau khi mà cả hai
+      đều là những tên tuổi lâu đời trong lĩnh vực cầu lông. Bên cạnh đó là
+      những công nghệ tiến tiến đứng đầu thế giới mà 2 hãng trang bị cho những
+      sản phẩm tung ra thị trường. <br />
+      <br />
+
+      Vợt cầu lông Victor có một trong những nhà máy sản xuất lớn nhất trên thế
+      giới. Vợt cầu lông Victor đã được sử dụng bởi những tay vợt nổi tiếng trên
+      thế giới như Gao Ning, Yang Wei, và Zhang JiWen. Hãng Victor cũng hợp tác
+      những bộ phim anime cho ra nhiều sự kết hợp hoàng hỏa như Victor One
+      Piece, Victor Dragon ball... <br />
+      <br />
+
+      Tuy nhiên, so với Yonex thì hiện tai Vợt cầu lông Victor có phần yếu thế
+      hơn, những năm trở lại đây hãng Victor cho ra thị trường khá ít sản phẩm
+      so với nhà Yonex. Tuy nhiên, chất lượng và độ hoàng thiện sản phẩm vẫn
+      được đánh giá cao. <br />
+      <br />
+
+      Mặc dù đã ra đời cách đây hơn 50 năm nhưng thương hiệu vợt cầu lông Yonex
+      vẫn luôn đứng đầu thế giới về mọi mặt cả về thiết kế lẫn công nghệ cũng
+      như truyền thông. Từ trước đến nay vẫn chưa có một hãng vợt cầu lông nào
+      có thể vượt qua được sức ảnh hưởng của hãng Yonex trong bộ môn cầu lông.
+    </p>
+  </body>
+</html>

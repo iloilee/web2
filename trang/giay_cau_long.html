@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badminton Store</title>
+    <style>
+      /* Đặt style cho phần body */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+
+      /* Style cho phần tiêu đề (header) */
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      /* Style cho tiêu đề của trang */
+      header h1 {
+        margin: 0;
+      }
+
+      /* Phần container chứa sản phẩm */
+      .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      /* Style cho từng sản phẩm */
+      .product {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        width: 200px;
+        margin: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Style cho ảnh sản phẩm */
+      .product img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      /* Tên sản phẩm */
+      .product h2 {
+        font-size: 18px;
+        color: #333;
+      }
+
+      /* Giá sản phẩm */
+      .product p {
+        color: #666;
+        font-size: 16px;
+      }
+
+      /* Style cho nút thêm vào giỏ hàng */
+      .product button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+      }
+
+      /* Thêm hiệu ứng cho nút */
+      .product button:hover {
+        background-color: #218838;
+      }
+      .gioithieu {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 20px 0;
+        padding: 50px;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Phần tiêu đề của trang -->
+    <header>
+      <h1>Badminton Store</h1>
+    </header>
+
+    <!-- Container chứa các sản phẩm -->
+    <div class="product-container">
+      <div class="product">
+        <img
+          src="../assets/img/item-giaycaulong/giay-cau-long-yonex-power-cushion-aerus-z-lady-xam-den-chinh-hang-5.webp"
+          alt="Sản phẩm 1"
+        />
+        <h2>Yonex Power Cushion Aerus Z Lady</h2>
+        <p>Giá: 2.850.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-giaycaulong/giay-cau-long-yonex-shb-65z3-wide-trang-cam-new-2023-2.webp"
+          alt="Sản phẩm 2"
+        />
+        <h2>Yonex SHB 65Z3 Wide White</h2>
+        <p>Giá: 2.450.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-giaycaulong/giay-cau-long-yonex-75th-65z2-men-new-2021-1.webp"
+          alt="Sản phẩm 3"
+        />
+        <h2>Yonex 75th 65Z2 Men 2021</h2>
+        <p>Giá: 2.480.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-giaycaulong/giay-cau-long-yonex-comfort-z3-trang-ma-kr_1726003177.webp"
+          alt="Sản phẩm 4"
+        />
+        <h2>Yonex Comfort Z3 White</h2>
+        <p>Giá: 2.800.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-giaycaulong/giay-cau-long-yonex-88-dial-3-wide-2024-xanh-nhat-chinh-hang_1714788509.webp"
+          alt="Sản phẩm 5"
+        />
+        <h2>Yonex 88 Dial 3 Wide Aqua</h2>
+        <p>Giá: 2.690.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-giaycaulong/giay-cau-long-victor-a170-ii-a-trang-chinh-hang_1714330456.webp"
+          alt="Sản phẩm 6"
+        />
+        <h2>Victor A170 II-A White</h2>
+        <p>Giá: 1.070.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-giaycaulong/giay-cau-long-victor-a970ace-xanh-nhat-noi-dia-trung-3.webp"
+          alt="Sản phẩm 7"
+        />
+        <h2>Victor A970 Ace Aqua</h2>
+        <p>Giá: 2.650.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-giaycaulong/giay-cau-long-victor-s82-a-chinh-hang-3.webp"
+          alt="Sản phẩm 8"
+        />
+        <h2>Victor S82 A</h2>
+        <p>Giá: 950.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-giaycaulong/giay-cau-long-victor-a362ii-plus-am-trang-chinh-hang_1699837979.webp"
+          alt="Sản phẩm 9"
+        />
+        <h2>Victor A362 II Plus AM White</h2>
+        <p>Giá: 1.180.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-giaycaulong/giay-cau-long-victor-one-piece-den-3.webp"
+          alt="Sản phẩm 10"
+        />
+        <h2>Victor One Piece Black</h2>
+        <p>Giá: 2.600.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-giaycaulong/giay-cau-long-lining-ayau007-1-hong-noi-dia-trung_1726880909.jpg"
+          alt="Sản phẩm 11"
+        />
+        <h2>Lining Aya007-1 Pink</h2>
+        <p>Giá: 3.700.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-giaycaulong/giay-cau-long-lining-aytt003-2-chinh-hang.webp"
+          alt="Sản phẩm 12"
+        />
+        <h2>Lining Aytt003-2</h2>
+        <p>Giá: 1.400.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-giaycaulong/giay-cau-long-lining-ayar011-1-chinh-hang-4.webp"
+          alt="Sản phẩm 13"
+        />
+        <h2>Lining Ayar011-1</h2>
+        <p>Giá: 2.100.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-giaycaulong/giay-cau-long-shi-yuqi-lining-ayar015-2-noi-dia-trung-5.webp"
+          alt="Sản phẩm 14"
+        />
+        <h2>Lining Shi Yuqi Ayar015-2</h2>
+        <p>Giá: 2.100.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="../assets/img/item-giaycaulong/giay-cau-long-lining-ayat003-2-trang-den-noi-dia-trung_1727214871.jpg"
+          alt="Sản phẩm 15"
+        />
+        <h2>Lining Ayat003-2 Black White</h2>
+        <p>Giá: 2.900.000đ</p>
+        <button>Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+    <p class="gioithieu">
+      Một set đồ tối thiểu cần có để chơi cầu lông hoàn hảo, quan trọng nhất là
+      vợt cầu lông thì giày cầu lông chính là bảo hiểm cho sự an toàn của bạn
+      mỗi phút trên sân. Hiện nay, trên thị trường có khả nhiều hãng cung cấp
+      giày cầu lông nam, giày cầu lông nữ. Tuy vậy, giầy cầu lông Lining,
+      Victor, Yonex... vẫn là những lựa chọn hàng đầu. <br />
+      <br />
+      <br />
+
+      <u><b>Giày cầu lông Yonex</b></u> <br />
+      <br />
+
+      Giày cầu lông Yonex đặc biệt nổi trội về các mẫu giày đánh cầu lông cao
+      cấp, chất lượng luôn mang đến độ êm ái tối đa cùng độ ổn định hoàn hảo
+      trên từng bước chạy của người sử dụng. <br />
+      <br />
+
+      Các sản phẩm của Yonex được cải tiến và ra mắt thường xuyên theo hàng năm.
+      Hãng cầu lông nổi tiếng thế giới Yonex không chỉ mạnh về vợt cầu lông mà
+      giày cầu lông Yonex cũng là một lựa chọn hàng đầu của nhiều người chơi.
+      Sản phẩm giày cầu lông Yonex có nhiều mẫu mã rất bắt mắt, nhiều phân khúc
+      tầm giá từ cao cấp, trung cấp đến những đôi giày cầu lông yonex giá rẻ.
+      Ngoài ra, những đôi giày yonex luôn đi tiên phong về công nghệ cũng như về
+      chất lượng. <br />
+      <br />
+
+      Nhắc đến công nghệ của giày cầu lông Yonex không thể không nhắc tới công
+      nghệ tối tân Power Cushion. Bộ đệm này đảm bảo sự êm ái trong từng chuyển
+      động với độ đàn hồi cực kì tốt. Power Cushion là công nghệ độc quyền của
+      Yonex được trang bị lên phần lớn các mẫu giày cầu lông của hãng hiện nay.
+      Ngoài ra, thì hãng còn nâng cấp thêm với công nghệ Power Cushion Plus với
+      khả năng hấp thụ sốc cao nhưng vẫn đảm bảo trọng lượng siêu nhẹ cho các
+      sản phẩm giày cầu lông Yonex. <br /><br />
+
+      Giày cầu lông Yonex khá đa dạng về mẫu mã cũng như các dòng phù hợp với
+      nhiều đối tượng người chơi khác nhau. Một số dòng sản phẩm như:
+      <br /><br />
+
+      - Yonex SHB 65: Hoàn hảo về mọi mặt, những bước chạy đầu tiên với độ nhẹ
+      nhàng, độ êm ái, độ ổn định. Một số sản phẩm nổi trội của dòng này như:
+      Giày cầu lông Yonex SHB 65Z2M Trắng xanh, Giày cầu lông Yonex SHB 65Z2M
+      Đen Xanh, Giày cầu lông Yonex SHB 65X2M Đen đỏ,... <br /><br />
+
+      - Giày cầu lông Yonex Eclipsion - Mang tính ổn định cao nhất cho mỗi bước
+      chạy. Các sản phẩm của dòng giày này sẽ giúp cho bước chân của bạn tự tin
+      và ổn định hơn được đa số các bạn dân chơi phong trào cực ưa chuộng với
+      thiết kế khá thời thượng, hiện đại, cùng phối hoàn hảo cực bắt mắt. Một số
+      sản phẩm nổi trội của dòng này như: Giày cầu lông Yonex Eclipsion Trắng
+      Cam (mã JP), Giày cầu lông Yonex Eclipsion Z Men - Đen Vàng <br />
+      <br />
+
+      - Giày cầu lông Yonex Aerus là một trong những dòng giày được hãng Yonex
+      đẩy mạnh, hướng đến đối tượng người chơi đặc thù. Dòng Giày Yonex Aerus
+      được mệnh danh là dòng giày siêu nhẹ của hãng Yonex, được hãng bổ trợ một
+      loạt các công nghệ hiện đại. Vật liệu sợi vải tổng hợp phối da cũng là yếu
+      tố quan trọng giúp cho đôi giày Yonex Aerus sở hữu một trọng lượng siêu
+      nhẹ như vậy, giúp người dùng dễ dàng linh hoạt cho từng bước chân.
+      <br /><br />
+
+      - Ngoài ra thì Yonex cũng thường cho ra các dòng giày cầu lông Yonex giá
+      rẻ phù hợp cho người mới chơi, người chơi phong trào, học sinh, sinh viên
+      như Giày Yonex Drive, Giày Cầu Lông Yonex Tokyo hay mới nhất là mẫu Giày
+      Cầu Lông Yonex Bubble Out. <br />
+      <br />
+      <br />
+
+      <u><b>Giày cầu lông Victor</b></u> <br /><br />
+      Victor là một trong những hãng cầu lông lớn nhất thể giới hiện nay đến từ
+      Đài Loan. Thương hiệu Victor đi đầu trong sản xuất những dụng cụ cầu lông
+      cùng với Yonex và Lining. Hãng rất được ưa chuộng và thịnh hành tại Việt
+      Nam với những đặc tính ưu việt của sản phẩm. Và một trong số sản phẩm
+      không thể thiếu khi chơi cầu lông mà người chơi lựa chọn đó chính là giày
+      cầu lông Victor. <br />
+      <br />
+
+      Giày cầu lông Victor sở hữu mẫu mã đa dạng và chất lượng tốt cùng với giá
+      thành khá rẻ chỉ từ vài trăm ngàn đến hơn một triệu. Với thiết kế hiện
+      đại, mẫu mã đơn giản, giá thành rẻ thì những sản phẩm giày cầu lông Victor
+      được người chơi cầu lông ở Việt Nam ưa chuộng. <br />
+      <br />
+
+      Giày cầu lông Victor có thiết kế form rất đa dạng dành cho cả người chân
+      thon và chân bè. Hầu hết giày cầu lông Victor có phần mũi giày mở rộng,
+      tạo cảm giác thoải mái các ngón chân, chống sốc và tối ưu tối đa khi vận
+      động. <br />
+      <br />
+      <br />
+
+      <u><b>Giày cầu lông Lining</b></u> <br />
+      <br />
+      Bên cạnh thương hiệu Yonex nổi tiếng từ Nhật Bản thì Lining cũng là một
+      thương hiệu được nhiều người chơi cầu lông tin tưởng và lựa chọn đến từ
+      Trung Quốc. Ngoài việc sản xuất ra những mẫu vợt cao cấp cho các vận động
+      viên chuyên nghiệp thì những mẫu giày Lining cũng vô cùng chất lượng.
+      <br />
+      <br />
+
+      Giày cầu lông Lining rất đa dạng về mẫu mã, nhiều kiểu dáng thời trang
+      năng động thích hợp cho cả nam và nữ. Sản phẩm của hãng Lining được thiết
+      kế mẫu mã khá đẹp, dễ tiếp cận, nhưng lại sở hữu những công nghệ hiện đại
+      mang tới sự hoàn hảo trên những đôi giày cầu lông. <br />
+      <br />
+
+      Giày cầu lông Lining có một đặc điểm chung là màu sắc khá bắt mắt, hình
+      thức dễ nhìn và hướng tới đa dạng người chơi. Giày Lining khá được ưa
+      chuộng ở thị trường trong nước vì tính ưu việt và mức giá phải chăng và có
+      nhiều sự lựa chọn cho từng đối tượng người chơi. Một số sản phẩm có mức
+      giá rẻ, nhưng chất lượng vẫn đảm bảo nhu cầu thiết yếu cho người chơi, đặc
+      biệt có nhiều sản phẩm vừa túi tiền cho người mới chơi, những bạn học
+      sinh, sinh viên. <br />
+      <br />
+      <br />
+    </p>
+  </body>
+</html>
