@@ -117,6 +117,59 @@ a {
   margin: 5px;
   border: none;
 }
+/* Căn chỉnh icon */
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listicon {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.listicon li {
+  position: relative; /* Để submenu định vị tương đối với phần tử cha */
+  margin: 0 5px;
+}
+
+/* Ẩn submenu ban đầu */
+.icon .submenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Xuất hiện ngay bên dưới icon */
+  left: 0;
+  background: #fff;
+  list-style: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Ẩn submenu ban đầu */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Hiển thị ngay bên dưới nút */
+  list-style: none;
+  white-space: nowrap; /* không xuống hàng */
+}
+.submenu li {
+  padding: 7px 10px;
+}
+.submenu li a {
+  text-decoration: none;
+  color: #000000;
+}
+/* Hiển thị submenu khi di chuột qua li cha */
+.listicon li:hover .submenu {
+  display: block;
+}
+.submenu li:hover {
+  background: #c7f4df;
+}
+
 /* ================================khung 4 ảnh nằm giữa trang================== */
 .khung {
   display: flex;
@@ -141,12 +194,16 @@ a {
   height: 100%;
 }
 /* ================================HOVER================================= */
+.tin-tuc .blog-tintuc .item-blog .block-thumb img:hover,
 .sp-caulong .pickle-column:hover,
 .sp-tennis .pickle-column:hover,
 .sp-pickleball .pickle-column:hover,
 .hinhanh:hover {
-  transform: scale(92%);
-  transition: transform 0.25s ease;
+  /* transform: scale(92%);
+  transition: transform 0.25s ease; */
+
+  transform: scale(1.04); /* Tăng kích thước ảnh khi hover */
+  /* transition: 0.1s; */
 }
 .chu {
   /* Đặt chữ lên ảnh */
@@ -232,10 +289,8 @@ a {
   height: 240px;
   width: 355px;
 }
-.tin-tuc .blog-tintuc .item-blog .block-thumb img:hover {
-  transform: scale(97%);
-}
 .tin-tuc .blog-tintuc .item-blog .block-content {
+  margin-top: 10px;
   width: 355px;
 }
 .tin-tuc .blog-tintuc .item-blog .block-content a {
@@ -339,4 +394,8 @@ p {
   font-weight: 400;
   line-height: 35px;
   color: #171100;
+}
+.main-content {
+  max-width: 1450px;
+  margin: 0 auto; /* Canh giữa toàn bộ nội dung của footer */
 }
