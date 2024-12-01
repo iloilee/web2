@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Nhập | ShopBMC</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Phần header -->
+    <div id="header"></div>
+
+    <!-- Phần Main -->
+    <main>
+      <div class="container page_customer_account">
+        <div class="container">
+          <div class="wrap_background_aside page_login">
+            <div class="row">
+              <div
+                class="col-lg-4 col-md-6 col-sm-12 col-xl-4 offset-0 offset-xl-4 offset-lg-4 offset-md-3 col-12"
+              >
+                <div class="page-login pagecustome clearfix">
+                  <div class="wpx">
+                    <h1 class="title_heads a-center"><span>Đăng nhập</span></h1>
+                    <div id="login" class="section">
+                      <form
+                        accept-charset="utf-8"
+                        action="/thanh-vien"
+                        id="customer_login"
+                        method="post"
+                      >
+                        <input name="act" value="act_dang_nhap" type="hidden" />
+                        <input
+                          name="back_url"
+                          value=""
+                          type="hidden"
+                          id="back_url"
+                        />
+                        <div class="form-signup clearfix">
+                          <fieldset class="form-group">
+                            <input
+                              type="text"
+                              class="form-control form-control-lg"
+                              name="email"
+                              placeholder="Email/Số ĐT"
+                              required
+                            />
+                          </fieldset>
+                          <fieldset class="form-group">
+                            <input
+                              type="password"
+                              class="form-control form-control-lg"
+                              name="password"
+                              id="customer_password"
+                              placeholder="Mật khẩu"
+                              required
+                            />
+                          </fieldset>
+                          <div class="pull-xs-left">
+                            <input
+                              class="btn btn-style"
+                              type="submit"
+                              value="Đăng nhập"
+                            />
+                          </div>
+                          <div class="btn_boz_khac">
+                            <div class="btn_khac">
+                              <a
+                                href="dang-ky.html"
+                                class="btn-link-style"
+                                title="Đăng ký tại đây"
+                                >Đăng ký tại đây</a
+                              >
+                            </div>
+                            <div class="btn_khac">
+                              <a
+                                href="quen-mat-khau.html"
+                                class="btn-link-style"
+                                >Quên mật khẩu</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Phần footer -->
+    <div id="footer"></div>
+
+    <script src="../assets/script.js"></script>
+  </body>
+</html>
