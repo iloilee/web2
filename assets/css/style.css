@@ -1,16 +1,14 @@
 * {
   box-sizing: border-box;
 }
-
 html {
   font-size: 62.5%;
 }
-/* khôi phục cỡ chữ mặc định theo rem */
 body {
   font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; /* khôi phục cỡ chữ mặc định theo rem */
 }
-/* =====================================thuoc tinh chung ==================*/
+/* ================================== thuoc tinh chung ==================*/
 a {
   text-decoration: none;
 }
@@ -25,7 +23,6 @@ a {
   background: #c7f4df;
 }
 .header.fixed {
-  position: sticky;
   top: -28px;
   z-index: 9999;
 }
@@ -37,14 +34,10 @@ a {
 .nav {
   margin-left: auto;
 }
+.icon ul,
 .nav ul {
   display: flex;
 }
-
-.icon ul {
-  display: flex;
-}
-
 .nav a {
   position: relative;
   color: #5f5b53;
@@ -58,10 +51,10 @@ a {
   text-shadow: 1px 0 0 currentColor;
 }
 .header .icon {
-  margin-left: 30px;
+  margin-left: 15px;
 }
 .header .timkiem {
-  margin-left: 49px;
+  margin-left: 35px;
 }
 /* =================================custom timkiem================== */
 .timkiem {
@@ -71,7 +64,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: 1.5em;
-  width: 18em;
+  width: 17em;
 }
 .timkiem input {
   padding: 0.8em 1em;
@@ -85,6 +78,7 @@ a {
 .timkiem input::placeholder {
   color: #ccc;
 }
+.btn-lienhe:hover,
 .icon button:hover,
 .timkiem button:hover {
   box-shadow: inset 0 -100px 0 0 rgba(10, 121, 84, 0.884);
@@ -108,55 +102,44 @@ a {
   padding-left: 0.9em;
   padding-right: 0.9em;
 }
-/* ============================================custom icon============== */
+/* ======================================custom icon============== */
 .icon button {
   position: relative;
   background-color: rgba(45, 187, 140, 0.801);
-  border-radius: 0.75em;
+  border-radius: 1em;
   padding: 15px 15px;
-  margin: 5px;
+  margin: 4px;
   border: none;
 }
-/* Căn chỉnh icon */
 .icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .listicon {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
 }
-
 .listicon li {
   position: relative; /* Để submenu định vị tương đối với phần tử cha */
-  margin: 0 5px;
+  margin: 0 4px;
 }
-
 /* Ẩn submenu ban đầu */
 .icon .submenu {
   display: none;
   position: absolute;
-  top: 100%; /* Xuất hiện ngay bên dưới icon */
+  top: 95%; /* Hiển thị bên dưới icon */
   left: 0;
   background: #fff;
   list-style: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Ẩn submenu ban đầu */
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%; /* Hiển thị ngay bên dưới nút */
-  list-style: none;
-  white-space: nowrap; /* không xuống hàng */
+  white-space: nowrap; /* K xuống hàng */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  z-index: 9999;
 }
 .submenu li {
-  padding: 7px 10px;
+  padding: 7px 12px;
+  margin: 0;
+  /* border: 1px solid; */
 }
 .submenu li a {
   text-decoration: none;
@@ -169,7 +152,6 @@ a {
 .submenu li:hover {
   background: #c7f4df;
 }
-
 /* ================================khung 4 ảnh nằm giữa trang================== */
 .khung {
   display: flex;
@@ -268,6 +250,7 @@ a {
   border-radius: 12px;
 }
 /* ========================================thumb blog===================== */
+.title-head-contact,
 .title-sp-moi,
 .sp-caulong .title-caulong,
 .sp-tennis .title-tennis,
@@ -359,11 +342,13 @@ em {
 .footer .row,
 .list-social {
   display: flex;
+  flex-wrap: nowrap; /* không xuống dòng */
 }
 .footer .img-social {
   height: 40px;
   margin-left: 10px;
   margin-right: 10px;
+  object-fit: contain;
 }
 .footer .row .column {
   width: 25%;
@@ -398,4 +383,451 @@ p {
 .main-content {
   max-width: 1450px;
   margin: 0 auto; /* Canh giữa toàn bộ nội dung của footer */
+}
+/* ==================================== style cho phần LIÊN HỆ ===================== */
+.layout-contact {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+/* Tiêu đề nhỏ */
+.contact h4,
+.form-contact h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+.contact .item {
+  margin-bottom: 10px;
+}
+.footer .column.cot3 .list li a,
+.contact .fone,
+.contact a {
+  color: #0066cc;
+  text-decoration: none;
+}
+.footer .column.cot3 .list li a:hover,
+.contact .fone:hover,
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Biểu mẫu liên hệ */
+.form-contact .form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.form-contact .form-control:focus {
+  border-color: #0066cc;
+  outline: none;
+}
+
+/* Nút gửi */
+.btn-lienhe {
+  background-color: rgba(45, 187, 140, 0.801);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Bố cục lưới */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.col-12,
+.col-lg-6,
+.col-md-6,
+.col-sm-12 {
+  flex: 1;
+  min-width: calc(50% - 15px); /* Chia đôi cho cột */
+}
+.col-12 {
+  min-width: 100%; /* Dùng cho kích thước nhỏ */
+}
+/* ==================================== style cho phần ĐĂNG NHẬP ===================== */
+.page_login {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 480px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.title_heads {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #000000;
+  text-align: center;
+}
+.form-signup .form-control-lg {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.form-signup .form-control-lg:focus {
+  border-color: #0066cc;
+  outline: none;
+}
+.btn-style {
+  background-color: rgba(45, 187, 140, 0.801);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-style:hover {
+  background-color: #34a089;
+}
+
+.btn-link-style {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-link-style:hover {
+  text-decoration: underline;
+}
+
+.btn_boz_khac {
+  margin-top: 20px;
+}
+
+.btn_khac {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Responsive columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.col-12,
+.col-lg-6,
+.col-md-6,
+.col-sm-12 {
+  flex: 1;
+  min-width: calc(50% - 15px);
+}
+.col-12 {
+  min-width: 100%;
+}
+/* ==================================== style cho phần ĐĂNG KÝ ===================== */
+/* ============== Style cho Đăng ký ============ */
+.page_customer_account {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+/* =========== Tiêu đề và liên kết ========== */
+/* .page-login .title_heads {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+} */
+.page-login .dkm {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+.page-login .dkm a {
+  color: #2dbb8c;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.page-login .dkm a:hover {
+  color: #239972;
+}
+/* ============== Form đăng ký ============ */
+.form-signup {
+  margin-top: 20px;
+}
+.form-group input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+.form-group input:focus {
+  border-color: #2dbb8c;
+  outline: none;
+}
+.btn-style {
+  width: 100%;
+  background-color: #2dbb8c;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-style:hover {
+  background-color: #239972;
+}
+/* ============== Responsive =============== */
+@media (max-width: 768px) {
+  .wrap_background_aside {
+    padding: 20px;
+  }
+  .form-group input {
+    font-size: 13px;
+  }
+  .btn-style {
+    font-size: 14px;
+  }
+}
+/* ==================================== style cho phần QUÊN MẬT KHẨU ===================== */
+/* ================= Style cho Quên mật khẩu ================== */
+.page_customer_account {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+/* =========== Tiêu đề và liên kết ========== */
+.page-login .title_heads {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+.page-login .dkm {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+.page-login .dkm a {
+  color: #2dbb8c;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.page-login .dkm a:hover {
+  color: #239972;
+}
+/* =========== Form quên mật khẩu ============ */
+.form-signup {
+  margin-top: 20px;
+}
+.form-group input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+.form-group input:focus {
+  border-color: #2dbb8c;
+  outline: none;
+}
+.captcha {
+  height: 40px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.btn-style {
+  width: 100%;
+  background-color: #2dbb8c;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-style:hover {
+  background-color: #239972;
+}
+.btn_boz_khac {
+  margin-top: 10px;
+  text-align: center;
+}
+.btn_boz_khac a {
+  font-size: 14px;
+  color: #2dbb8c;
+  text-decoration: underline;
+}
+.btn_boz_khac a:hover {
+  color: #239972;
+}
+/* ============== Responsive ================= */
+@media (max-width: 768px) {
+  .wrap_background_aside {
+    padding: 20px;
+  }
+
+  .form-group input {
+    font-size: 13px;
+  }
+
+  .btn-style {
+    font-size: 14px;
+  }
+}
+/* ==================================== style cho phần THÀNH VIÊN ===================== */
+/* ================= Style chung ================= */
+.page_customer_account {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+.signup {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ============ Tiêu đề trang ============ */
+.page-title h1,
+.title-head {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ======== Thông tin khách hàng ============ */
+.block-account {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.block-account h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.block-account p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.block-account svg {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.block-account a.btn {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(45, 187, 140, 0.801);
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.block-account a.btn:hover {
+  background-color: #36a986;
+}
+
+/* ======== Danh sách đơn hàng ============ */
+.my-account {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.table-order {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-order th {
+  background-color: rgba(45, 187, 140, 0.801);
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  text-align: left;
+}
+
+.table-order td {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-order tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-order td p {
+  text-align: center;
+  color: #555;
+}
+.table-responsive-block {
+  overflow-x: auto;
+}
+/* ============ Responsive ============== */
+@media (max-width: 768px) {
+  .signup {
+    padding: 15px;
+  }
+
+  .block-account,
+  .my-account {
+    margin-bottom: 20px;
+  }
+
+  .table-order th,
+  .table-order td {
+    font-size: 12px;
+  }
 }
